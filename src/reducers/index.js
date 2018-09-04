@@ -5,7 +5,7 @@ import * as actions from '../actions';
 // hard coded intial state
 
 const initialState = {
-  guesses: [1, 3, 4],
+  guesses: [],
   feedback: 'Make your guess!',
   auralStatus: '',
   correctAnswer: Math.floor(Math.random() * 100) + 1
