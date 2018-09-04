@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './guess-form.css';
+import { connect } from 'react-redux';
 
 export default class GuessForm extends React.Component {
   onSubmit(event) {
@@ -41,3 +42,12 @@ export default class GuessForm extends React.Component {
     );
   }
 }
+
+// function mapStateToProps(state) {
+//   return {
+//     guesses: state.guesses,
+//     feedback: state.feedback,
+//   };
+// }
+
+// export default connect(mapStateToProps)(GuessForm);
