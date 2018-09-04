@@ -4,14 +4,14 @@ import ReactDOM from 'react-dom';
 import './reset.css';
 import './index.css';
 import store from './store';
-import {addGuess} from './actions';
+import {addGuess, restartGame, generateAural} from './actions';
+import {Provider} from 'react-redux';
 
 import Game from './components/game';
 
-store.dispatch(addGuess(2));
-console.log(store.getState());
-
 ReactDOM.render(
-  <Game />,
+  <Provider store={store}>
+    <Game />
+  </Provider>,
   document.getElementById('root')
 );
